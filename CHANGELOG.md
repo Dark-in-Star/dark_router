@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.3
+- Fixed minor issues
+
 ## 0.1.2
 
 ### Added

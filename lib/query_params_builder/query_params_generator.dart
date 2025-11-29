@@ -197,12 +197,11 @@ $callbackSection
     return _\$${className}CallbackSeed.toRadixString(16);
   }
 
-  /// Registers a callback function and saves its ID into `$fieldName`.
-  ///
-  /// NOTE: this ID is stored on the instance but actual function references
-  /// are kept in a static, in-memory map and never serialized.
+  /// Registers a callback function, saves its ID into `$fieldName`,
+  /// and returns the same instance to allow chaining.
   $className setCallback(Function fn) {
-    final id = _${className}CallbackHelper.register(fn);
+    final id = _\$${className}GenerateCallbackId();
+    _\$${className}Callbacks[id] = fn;
     $fieldName = id;
     return this;
   }
