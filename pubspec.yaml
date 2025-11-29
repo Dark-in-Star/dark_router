@@ -1,6 +1,6 @@
 name: dark_router
 description: A extension package for go_router to support query parameters generation and making life easy for you with other usefull features.
-version: 0.1.1
+version: 0.1.2
 
 repository: https://github.com/Dark-in-Star/dark_router
 homepage:  https://github.com/Dark-in-Star/dark_router

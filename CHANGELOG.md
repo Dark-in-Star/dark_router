@@ -1,17 +1,21 @@
 # Changelog
 
-## 0.0.1
+## 0.1.2
 
-- Initial release.
-- Added `@QueryParamsSerializable` annotation.
-- Added `@CallbackIdField` annotation.
-- Added source_gen builder (`query_params`).
-- Query parameter serialization/deserialization.
-- Callback registry support.
-- Payload encoding via `ed`.
-- Example project included.
-- MIT License added.
+### Added
+- **Fluent callback API**
+  - `setCallback()` now returns the current instance, allowing:
+    ```dart
+    final qp = QueryParams(intl: list)
+        .setCallback((value) => doSomething(value));
+    ```
+- Clearer documentation for callback usage patterns.
 
+### Changed
+- Updated generator output so that `setCallback` becomes chain-friendly without breaking existing code.
+- Minor internal cleanups and documentation improvements.
+
+---
 
 ## 0.1.1
 
@@ -43,3 +47,17 @@
 - Updated inline documentation with detailed examples for all route configs.
 - Removed outdated files and old builder implementations.
 - Cleaned up comments, formatting, and internal code structure.
+
+---
+
+## 0.0.1
+
+- Initial release.
+- Added `@QueryParamsSerializable` annotation.
+- Added `@CallbackIdField` annotation.
+- Added source_gen builder (`query_params`).
+- Query parameter serialization/deserialization.
+- Callback registry support.
+- Payload encoding via `ed`.
+- Example project included.
+- MIT License added.
