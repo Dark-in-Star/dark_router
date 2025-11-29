@@ -1,0 +1,49 @@
+# FVM
+.fvm/
+*.fvmrc
+
+# Dart & Flutter build outputs
+.buildlog
+.dart_tool/
+.packages
+.pub/
+build/
+coverage/
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# Logs & temp
+*.log
+*.tmp
+*.temp
+*.DS_Store
+
+# Generated files
+*.g.dart
+*.freezed.dart
+
+# Tests outputs
+test/**/coverage/
+test/.test_coverage.dart
+
+# OS junk
+Thumbs.db
+Desktop.ini
+
+# Project-specific
+example/.dart_tool/
+example/build/
+example/.fvm/
+example/.vscode/
+
+# GitHub & CI
+.github/
+.gitignore
+
+# Do not ship local configs
+*.yaml.local
+*.env
+*.env.*

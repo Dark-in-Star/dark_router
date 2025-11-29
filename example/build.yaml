@@ -1,7 +1,0 @@
-targets:
-  $default:
-    builders:
-      json_serializable:json_serializable:
-        enabled: true
-      dark_router|query_params:
-        enabled: true
